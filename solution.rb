@@ -17,3 +17,4 @@ maps_request_url= "https://maps.googleapis.com/maps/api/geocode/json?address="+u
 raw_maps_url=HTTP.get(maps_request_url)
 #pp google_maps_key
 #pp pirate_weather_key
+pp raw_maps_url
