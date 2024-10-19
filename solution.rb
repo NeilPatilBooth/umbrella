@@ -15,6 +15,15 @@ user_city = gets.chomp
 maps_request_url= "https://maps.googleapis.com/maps/api/geocode/json?address="+user_city+"&key="+google_maps_key
 #Place a GET Request 
 raw_maps_url=HTTP.get(maps_request_url)
+require "json"
+
+#Set the raw to JSON 
+parsed_raw_maps_url=JSON.parse(raw_maps_url)
+
+pp parsed_raw_maps_url
 #pp google_maps_key
 #pp pirate_weather_key
-pp raw_maps_url
+
+
+
+raw_maps_url
