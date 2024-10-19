@@ -19,8 +19,13 @@ require "json"
 
 #Set the raw to JSON 
 parsed_raw_maps_url=JSON.parse(raw_maps_url)
-
 pp parsed_raw_maps_url
+
+#Fetch Latitude & Longitude 
+#city_location_hash=parsed_raw_maps_url.fetch("")
+
+
+#pp city_lat
 #pp google_maps_key
 #pp pirate_weather_key
 
